@@ -14,7 +14,7 @@ Location: SF
 - Understanding algorithms let us reuse knowledge from the field.
 - Better-performing algorithms can enhance the user experience by decreasing wait times.
 - Better-performing algorithms can save companies money by reducing equipment needs.
-- Algorithms and algorithm analysis are an important part of the shared language developers use to talk about programs (especially in **INTERVIEWS!**).
+- Algorithms and algorithm analysis are an important part of the shared language developers use to talk about programs.
 
 ### What are the objectives?
 <!-- specific/measurable goal for students to achieve -->
@@ -166,7 +166,7 @@ These algorithms take longer for larger inputs, but the rate of increase is very
 
 <details><summary>*Optional: Can you think of an example of an `O(log n)` algorithm?*</summary>
 
-An common example is finding an item in a sorted list with a balanced search tree or a binary search! Here's some pseudocode:
+An common example is finding an item in a sorted list with a balanced search tree or a binary search!
 
 ```ruby
 
@@ -185,8 +185,6 @@ def binary_search(array, value, low=0, high=array.size-1)
   end
 end
 ```
-
-> Just kidding; that "pseudocode" is Ruby!
 
 </details>
 
@@ -210,25 +208,6 @@ function fibonacci(num) {
   } else {
     return fibonacci(num - 1) + fibonacci (num - 2);
   }
-}
-```
-
-
-####Combinations
-
-There are a few other common Big O families (notably `O(n!)`), but many problems are composed of combinations of the times we've looked at so far. For example, if a for loop has more complex operations inside it, time complexity is usually higher.
-
-```js
-function addAllArrays(arrayOfArrays){
-    var sum = 1;
-    var oneArray;
-    for (var i=0; i<arrayOfArrays.length; i++){
-        oneArray = arrayOfArrays[i];
-        for (var j=0; j<oneArray.length; j++){
-            sum +=  numArray[j];
-        }
-    }
-    return sum;
 }
 ```
 
